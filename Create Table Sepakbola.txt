@@ -1,0 +1,38 @@
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| indonesia          |
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+6 rows in set (0.001 sec)
+
+MariaDB [(none)]> create database permainan;
+Query OK, 1 row affected (0.002 sec)
+
+MariaDB [(none)]> use permainan;
+Database changed
+MariaDB [permainan]> create table sepakbola (
+    -> id_pemain INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    -> nama_pemain VARCHAR(100) NOT NULL,
+    -> usia_pemain INT(2) NOT NULL,
+    -> posisi_pemain VARCHAR(50) NOT NULL
+    -> );
+Query OK, 0 rows affected (0.022 sec)
+
+MariaDB [permainan]> desc sepakbola;
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| id_pemain     | int(11)      | NO   | PRI | NULL    | auto_increment |
+| nama_pemain   | varchar(100) | NO   |     | NULL    |                |
+| usia_pemain   | int(2)       | NO   |     | NULL    |                |
+| posisi_pemain | varchar(50)  | NO   |     | NULL    |                |
++---------------+--------------+------+-----+---------+----------------+
+4 rows in set (0.010 sec)
+
+MariaDB [permainan]>

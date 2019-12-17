@@ -1,0 +1,31 @@
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| indonesia          |
+| information_schema |
+| mysql              |
+| performance_schema |
+| permainan          |
+| phpmyadmin         |
+| test               |
++--------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [(none)]> drop database permainan;
+Query OK, 0 rows affected (0.001 sec)
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| indonesia          |
+| information_schema |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
++--------------------+
+6 rows in set (0.002 sec)
+
+MariaDB [(none)]>

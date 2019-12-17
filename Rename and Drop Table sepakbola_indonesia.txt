@@ -1,0 +1,16 @@
+MariaDB [permainan]> alter table sepakbola rename to sepakbola_indonesia;
+Query OK, 0 rows affected (0.036 sec)
+
+MariaDB [permainan]> show tables;
++---------------------+
+| Tables_in_permainan |
++---------------------+
+| sepakbola_indonesia |
++---------------------+
+1 row in set (0.001 sec)
+
+MariaDB [permainan]> drop table sepakbola_indonesia;
+Query OK, 0 rows affected (0.022 sec)
+
+MariaDB [permainan]> show tables;
+Empty set (0.001 sec)
